@@ -1,19 +1,26 @@
 public class extends1 {
     public static void main(String args[]){
-        student stu = new student();
-        System.out.println(stu.getInfo());
-        stu.setName("season");
-        stu.setAge(18);
-        System.out.println(stu.getInfo());
-
+//        student stu = new student("season",18);
+//        System.out.println(stu.getInfo());
+//        System.out.println(stu.getInfo());
+        person p = new person("zhushoiucheng",23);
+        person p1 = new person();
     }
 }
-class student extends person{
-}
-
 class person{
     private String name;
     private int age;
+    person(){
+        System.out.println("this is a houzaofangfa!");
+    }
+
+    person(String name){
+        this.name = name;
+    }
+    person(String name , int age){
+        this.name = name;
+        this.age = age;
+    }
 
     public void setName(String name){
         this.name = name;
